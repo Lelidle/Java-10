@@ -1,0 +1,10 @@
+*.log
+*.thm
+*.class
+*.synctex.gz
+*.aux
+*.fls
+_minted*
+*.ctxt
+*.zip
+*.fdb_latexmk

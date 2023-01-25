@@ -1,0 +1,54 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german]{babel}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{minted}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage[top=1.5cm, bottom=0.75cm, left=2cm, right=2cm, headheight=1.5cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{mdframed}
+\usemintedstyle{emacs}
+
+\definecolor{purp}{HTML}{9A72AC}
+\definecolor{re}{HTML}{FC6255}
+\definecolor{gre}{HTML}{83C167}
+\definecolor{blu}{HTML}{58C4DD}
+\definecolor{shadecolor}{rgb}{0.85,0.85,0.85}
+\definecolor{bg}{rgb}{0.95,0.95,0.95}
+\setlength{\parindent}{0em} 
+
+\BeforeBeginEnvironment{minted}{\begin{mdframed}[linewidth =2 ,backgroundcolor=bg , linecolor=black, linewidth=0.5]}
+\AfterEndEnvironment{minted}{\end{mdframed}}
+
+\newenvironment{defi}[1]{
+    \begin{shaded*}
+    \textbf{Definition #1} \\
+}{
+    \end{shaded*}
+}
+
+\newcommand{\bsp}{\textbf{Beispiel}:}
+%\newcommand{\task}{\textbf{Aufgabe}:}
+
+\newcommand{\bol}[1]{\textbf{#1}}
+\newcommand{\q}[1]{\glqq #1\grqq}
+\newcommand{\DODO}[1]{\textbf{\textcolor{red}{DODO:}} #1 \\ \begin{center}\includegraphics[scale=0.2]{../../media/dodo.jpg} \end{center}}
+
+\newenvironment{task}[1]{
+    \begin{shaded*}
+    \textbf{Aufgabe #1}:
+}{
+    \end{shaded*}
+}
+
+\setlength{\headheight}{3cm}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\LARGE\textbf{Überschrift}}
+\fancyhead[R]{\LARGE \textbf{Datum:} \hspace{2cm}}
+\renewcommand{\headrulewidth}{0.4pt}
+
