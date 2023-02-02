@@ -8,7 +8,7 @@ public class Strukturen {
      */
     public static void magic(int a, int b) {
         if(a == b) {
-            for(int i = 2; i < b; i++) {
+            for(int i = 2; i < b; i = i +1) {
                 System.out.println(i);
             }
         } else {
@@ -42,6 +42,11 @@ public class Strukturen {
      */
     public static void magicThree(int a) {
         int summe = 0;
+        // 1. Durchlauf: summe = 0 + 1 (i = 1)
+        //2. Durchlauf: summe = 1 + 3 = 4 (i = 3)
+        // 3. Durchlauf: summe = 4 + 5 (i = 5)
+        // 4. Durchlauf: summe = 9 + 7 = 16 (i = 7)
+    // 5. Durchlauf 9 <= 7
         for(int i = 1; i <= a; i = i + 2) {
             summe = summe + i;
         }
