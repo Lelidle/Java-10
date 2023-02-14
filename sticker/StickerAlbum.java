@@ -67,4 +67,12 @@ public class StickerAlbum {
         aktuelleGeldmenge += guthaben;
     }
 
+    public void druckeAlbum() {
+        for(int i = 0; i < album.length; i++) {
+            if(album[i] != null) {
+                System.out.println(album[i].gibInfos());
+            }
+        }
+    }
+
 }

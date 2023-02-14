@@ -21,7 +21,7 @@ public class StickerVerkäufer {
         }
     }
 
-    public void schreibeDaten() {
+    private void schreibeDaten() {
         for(Map.Entry<Integer, String[]> set : daten.entrySet()) {
             System.out.print(set.getKey() + " ");
             for(String l : set.getValue()) {
@@ -36,16 +36,16 @@ public class StickerVerkäufer {
         for(int i = 0; i < 5; i++) {
             if(Math.random()>0.95){
                 int stickerNummer = (int) Math.floor((Math.random()*18+150));
-                gekaufteSticker[i] = new Sticker(stickerNummer, daten.get(stickerNummer)[1], "gold");
+                gekaufteSticker[i] = new Sticker(stickerNummer, daten.get(stickerNummer)[0], "gold");
             } else {
                 int stickerNummer = (int) Math.floor((Math.random()*149 + 1));
-                gekaufteSticker[i] = new Sticker(stickerNummer, daten.get(stickerNummer)[1]);
+                gekaufteSticker[i] = new Sticker(stickerNummer, daten.get(stickerNummer)[0]);
             }
         }
         return gekaufteSticker;
     }
 
-    public HashMap<Integer,String[]> ladeDaten() throws IOException {
+    private HashMap<Integer,String[]> ladeDaten() throws IOException {
         HashMap<Integer,String[]> daten = new HashMap<Integer,String[]>();
         InputStream input = StickerVerkäufer.class.getResourceAsStream("pokemon.csv");
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(input))) {

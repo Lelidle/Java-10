@@ -1,0 +1,31 @@
+\documentclass[fontsize=12pt]{article}
+\input{template.tex}
+\fancypagestyle{firstpage}{
+    \setlength{\headheight}{2.5cm}
+    \setlength{\footskip}{0.25cm}
+    \pagestyle{fancy}
+    \renewcommand{\headrulewidth}{0.4pt}
+    \fancyhf{}
+    \fancyhead[L]{\LARGE\textbf{Aggregation und Referenzen}}
+    \fancyhead[R]{\Large \textbf{Datum:} \hspace{2cm}}
+    \fancyfoot[C]{\thepage}
+}
+\begin{document}
+\thispagestyle{firstpage}
+\setlength{\headsep}{12pt}
+Neben Arrays ist es ein Wesentliches Ziel dieser Jahrgangsstufe, dass in Projekten mehrere Klassen verwendet werden (in kleinerer Form kam dies bereits in der neunten Klasse bei Klassendiagrammen vor!). \\
+Damit Objekte verschiedener Klassen einfacher verknüpft werden können, werden sie häufig als Attribute angelegt - bisher waren Attribute hauptsächliche primitive Datentypen wie boolean, int oder double (String war schon die ganze Zeit eine Ausnahme!). \\
+Zunächst ein anschaulicheres Beispiel: häufig \q{bestehen} Objekte hauptsächlich aus anderen Objekten (zumindest in der verwendeten Modellierung). Wollen wir beispielsweise ein Stickeralbum modellieren, benötigen wir zwei Klassen, eine für das Album und eine für einen einzelnen Sticker, man kann sagen: das Stickeralbum \textbf{enthält} die Sticker (das entspricht auch der Realität relativ gut!). \\
+Im Fachbegriff heißt so eine \q{enthält}-Beziehung \textbf{Aggregation}. Im Objektdiagramm sähe das z.B. so aus: 
+\begin{center}
+    \includegraphics[scale=0.35]{media/obj_diagramm_album.png}
+\end{center}
+Im Klassendiagramm würde dies mit einem anderen Pfeil markiert werden:
+\begin{center}
+    \includegraphics[scale=0.20]{media/class_diagram_album.png}
+\end{center}
+Ein StickerAlbum besteht also aus 151 Objekten vom Typ Sticker. Die \textbf{Multiplizität} $1$ beim StickerAlbum wird in der Regel weggelassen. Aggregationen werden - wie viele \q{Verbindungen} zwischen Klassen - mit Attributen realisiert. Vereinfachen wir unser Beispiel weiter und nehmen an, dass es nur drei Sticker gibt, dann könnte eine Implementierung so aussehen: 
+\begin{minted}{java}
+    
+\end{minted}
+\end{document}

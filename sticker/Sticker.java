@@ -33,4 +33,12 @@ public class Sticker {
         return name;
     }
 
+    public String gibInfos(){
+        String toReturn =  nummer + " " + name;
+        if(spezialEigenschaft != "") {
+            toReturn += " ist golden!"; 
+        }
+        return toReturn;
+    }
+
 }
