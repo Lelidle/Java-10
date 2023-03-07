@@ -24,8 +24,56 @@ Im Klassendiagramm würde dies mit einem anderen Pfeil markiert werden:
 \begin{center}
     \includegraphics[scale=0.20]{media/class_diagram_album.png}
 \end{center}
-Ein StickerAlbum besteht also aus 151 Objekten vom Typ Sticker. Die \textbf{Multiplizität} $1$ beim StickerAlbum wird in der Regel weggelassen. Aggregationen werden - wie viele \q{Verbindungen} zwischen Klassen - mit Attributen realisiert. Vereinfachen wir unser Beispiel weiter und nehmen an, dass es nur drei Sticker gibt, dann könnte eine Implementierung so aussehen: 
+Ein StickerAlbum besteht also aus 151 Objekten vom Typ Sticker. Die \textbf{Multiplizität} $1$ beim StickerAlbum wird in der Regel weggelassen. Aggregationen werden - wie viele \q{Verbindungen} zwischen Klassen - mit Attributen realisiert. Vereinfachen wir unser Beispiel weiter und nehmen an, dass es nur drei Sticker gibt, dann könnte eine grundlegendeImplementierung des Stickeralbums so aussehen: 
 \begin{minted}{java}
-    
+public class StickerAlbum {
+    private Sticker glumanda;
+    private Sticker bisasam;
+    private Sticker schiggy;
+
+    public StickerAlbum() {
+        bisasam = new Sticker(1, "Bisasam");
+        glumanda = new Sticker(4, "Glumanda");
+        schiggy = new Sticker(7, "Schiggy");
+    }
+}
 \end{minted}
+Dabei wird - wie schon beim Array - mit dem Schlüsselwort \textbf{new} neue Objekte der Klasse Sticker erzeugt. (Man spricht auch von \textbf{Instanziierung)}. \\
+\begin{minted}{java}
+public class Sticker() {
+    int nummer;
+    String name;
+    public Sticker(int nummer, int name) {
+        this.nummer = nummer;
+        this.name = name;
+    }
+}
+\end{minted}
+\vspace{2mm}
+\textbf{Wichtig:} Die Sticker-Objekte sind nicht wirklich im StickerAlbum-Objekt \q{enthalten} im Sinne von: im Speicher stehen sie \q{ineinander}. Vielmehr ist die deklarierte Variable ein Zeiger (Fachbegriff: \textbf{Referenz}), die auf den Ort im Speicher verweist, an dem die eigentlichen Daten abgelegt sind - noch genauer gesagt: auf die Adresse der ersten Speicherzelle, die für das erzeugte Objekt verwendet wird. (im Folgenden noch mit Objektkarten veranschaulicht): \\
+\begin{center}
+    \includegraphics[scale=0.15]{media/speicher_sticker.png}
+\end{center}
+Ähnliches gilt auch für Arrays. Speichert man primitive Datentypen (also z.B. int, boolean, etc.) in einem Array, so ist die Variable eine Referenz in den Speicher, die an die erste Stelle mit Metadaten zeigt (z.B. liegt dort der Wert des length-Attributs, das wir schon verwendet haben). Anschließend liegen in den folgenden Speicherzellen die Werte explizit abgespeichert. Handelt es sich jedoch um ein Array von Objekten, so ist in jeder der folgenden Speicherzellen nur eine Referenz auf den Speicherort der jeweiligen Objekte vermerkt.
+Wären in unserem StickerAlbum von oben die Sticker in einem Array gespeichert, dann sähe Implementierung und Speicherveranschaulichung so aus: 
+\begin{minted}{java}
+public class StickerAlbum {
+    Sticker[] sticker;
+    public StickerAlbum() {
+        sticker = new Sticker[3];
+        sticker[0] = new Sticker(1, "Bisasam");
+        sticker[1] = new Sticker(4, "Glumanda");
+        sticker[2] = new Sticker(7, "Schiggy");
+    }
+}
+\end{minted}
+\begin{center}
+    \includegraphics[scale=0.15]{media/speicher.png}
+\end{center}
+\newpage
+
+Noch einmal zurück zu \textbf{Referenzen}: immer wenn ein Objekt auf ein anderes Objekt \q{verweist} (also nicht nur im Kontext von Arrays) spricht man von einer Referenz. Erst durch diese Referenzen können die Objekte überhaupt miteinander interagieren, da sie ansonsten nichts von der Existenz des jeweils anderen wissen würden. Dabei ergeben sich gewisse Fallstricke. Wir betrachten eine anschauliche Situation, hier als Klassendiagramm:
+\begin{center}
+    \includegraphics[options]{name}
+\end{center} 
 \end{document}
