@@ -1,0 +1,39 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Regal} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{nummer}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Buch}\PYG{o}{[]} \PYG{n}{bücher}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Regal}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{nummerNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{nummer} \PYG{o}{=} \PYG{n}{nummerNeu}\PYG{p}{;}
+        \PYG{n}{bücher} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Buch}\PYG{o}{[}\PYG{l+m+mi}{32}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{32}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{bücher}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Buch}\PYG{p}{(}\PYG{n}{nummerNeu}\PYG{o}{*}\PYG{l+m+mi}{100}\PYG{o}{+}\PYG{n}{i}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{n}{Buch} \PYG{n+nf}{buchSuchen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{isbn}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{mitgliedsnummer}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Alle Bücher werden untersucht:}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{32}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//Wir überprüfen die ISBN\PYGZhy{}Nummer, indem wir auf dem in buecher[i]}
+            \PYG{c+c1}{//gespeicherten Objektreferenz den getter aufrufen.}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{bücher}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{gibIsbn}\PYG{p}{()} \PYG{o}{==} \PYG{n}{isbn}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{c+c1}{//Als nächstes überprüfen wir, ob das Buch ausgeliehen ist}
+                \PYG{c+c1}{//mit einem weiteren Getter:}
+                \PYG{k}{if}\PYG{p}{(}\PYG{n}{bücher}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{istAusgeliehen}\PYG{p}{()} \PYG{o}{==} \PYG{k+kc}{true}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                    \PYG{c+c1}{//Falls das Buch ausgeliehen ist geben wir null und eine Fehlermeldung aus}
+                    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Das Buch ist leider ausgeliehen\PYGZdq{}}\PYG{p}{);}
+                    \PYG{k}{return} \PYG{k+kc}{null}\PYG{p}{;}
+                \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+                    \PYG{c+c1}{//Falls nicht, dann setzen wir alle notwendigen Attribute}
+                    \PYG{c+c1}{//und geben das Buch zurück:}
+                    \PYG{n}{bücher}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{wirdAusgeliehen}\PYG{p}{(}\PYG{n}{mitgliedsnummer}\PYG{p}{);}
+                    \PYG{k}{return} \PYG{n}{bücher}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+                \PYG{p}{\PYGZcb{}}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{c+c1}{//Falls wir das Buch nicht finden, müssen wir null zurückgeben, aber}
+        \PYG{c+c1}{//keine Fehlermeldung, es könnte noch in einem anderen Regal sein!}
+        \PYG{k}{return} \PYG{k+kc}{null}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

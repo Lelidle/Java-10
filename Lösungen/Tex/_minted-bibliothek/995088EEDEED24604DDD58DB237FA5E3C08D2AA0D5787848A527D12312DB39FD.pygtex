@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Bibliothek} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+    \PYG{c+c1}{//Das Array wird für Einträge des Datentyps Regal deklariert}
+    \PYG{k+kd}{private} \PYG{n}{Regal}\PYG{o}{[]} \PYG{n}{regale}\PYG{p}{;}
+
+    \PYG{c+c1}{//Wir gehen hier davon aus, dass nur eine Bibliothek verwendet werden soll.}
+    \PYG{k+kd}{public} \PYG{n+nf}{Bibliothek}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{name} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Neumarkter Stadtbibiothek\PYGZdq{}}\PYG{p}{;}
+        \PYG{c+c1}{//Das Array wird initialisiert mit Länge 64}
+        \PYG{n}{regale} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Regal}\PYG{o}{[}\PYG{l+m+mi}{64}\PYG{o}{]}\PYG{p}{;}
+        \PYG{c+c1}{//Das Array wird gefüllt:}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{64}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//Der Einfachheit halber bekommt jedes Regal die Nummer, die}
+            \PYG{c+c1}{//auch den Platz im Array beschreibt, das muss aber nicht so sein!}
+            \PYG{n}{regale}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Regal}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

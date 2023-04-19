@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Buch} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{isbn}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{ausgeliehenAn}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n}{ausgeliehen}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Buch}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{isbnNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{isbn} \PYG{o}{=} \PYG{n}{isbnNeu}\PYG{p}{;}
+        \PYG{n}{ausgeliehenAn} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{ausgeliehen} \PYG{o}{=} \PYG{k+kc}{false}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{c+c1}{//Die zwei getter:}
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{gibIsbn}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n}{isbn}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{boolean} \PYG{n+nf}{istAusgeliehen}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n}{ausgeliehen}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{c+c1}{//wenn das Buch ausgeliehen wird, wird die Mitgliedsnummer hinterlegt}
+    \PYG{c+c1}{//und das Attribut auf true gesetzt}
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{wirdAusgeliehen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{mitgliedsnummer}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{ausgeliehenAn} \PYG{o}{=} \PYG{n}{mitgliedsnummer}\PYG{p}{;}
+        \PYG{n}{ausgeliehen} \PYG{o}{=} \PYG{k+kc}{true}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

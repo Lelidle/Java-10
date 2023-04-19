@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Autofahrt
+comment1.params=
+comment1.target=void\ starten()
+comment2.params=
+comment2.target=void\ settings()
+comment3.params=
+comment3.target=void\ setup()
+comment4.params=
+comment4.target=void\ draw()
+comment5.params=
+comment5.target=void\ keyPressed()
+numComments=6

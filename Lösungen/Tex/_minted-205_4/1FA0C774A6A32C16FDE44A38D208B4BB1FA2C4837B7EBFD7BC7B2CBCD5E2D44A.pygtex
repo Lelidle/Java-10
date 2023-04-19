@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{würfelNMal}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{anzahl}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{       }\PYG{k+kt}{int}\PYG{o}{[]}\PYG{+w}{ }\PYG{n}{ergebnisse}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{new}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{o}{[}\PYG{l+m+mi}{6}\PYG{o}{]}\PYG{p}{;}
+\PYG{+w}{       }\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{anzahl}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{           }\PYG{n}{ergebnisse}\PYG{o}{[}\PYG{n}{würfeln}\PYG{p}{()}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{o}{]++}\PYG{p}{;}
+\PYG{+w}{       }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{       }\PYG{n}{ausgeben}\PYG{p}{(}\PYG{n}{ergebnisse}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

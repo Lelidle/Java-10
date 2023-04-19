@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Strukturen
+comment1.params=a\ b
+comment1.target=void\ magic(int,\ int)
+comment1.text=\r\n\ Aufrufe\:\r\n\ magic(4,4);\r\n\ magic(4,3);\r\n\ magic(3,4);\r\n
+comment2.params=a
+comment2.target=void\ magicTwo(int)
+comment2.text=\r\n\ Aufrufe\:\r\n\ magicTwo(7)\r\n\ magicTwo(10)\r\n
+comment3.params=a
+comment3.target=void\ magicThree(int)
+comment3.text=\r\n\ Aufrufe\:\r\n\ magicThree(1);\r\n\ magicThree(7);\r\n\ magicThree(8);\r\n
+numComments=4

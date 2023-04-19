@@ -1,0 +1,59 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Menü} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Vorspeise} \PYG{n}{vorspeise}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Hauptspeise} \PYG{n}{hauptspeise}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Nachspeise} \PYG{n}{nachspeise}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Menü}\PYG{p}{(}\PYG{n}{String} \PYG{n}{name}\PYG{p}{,} \PYG{n}{Vorspeise} \PYG{n}{vorspeise}\PYG{p}{,} \PYG{n}{Hauptspeise} \PYG{n}{hauptspeise}\PYG{p}{,}
+     \PYG{n}{Nachspeise} \PYG{n}{nachspeise}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{vorspeise} \PYG{o}{=} \PYG{n}{vorspeise}\PYG{p}{;}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{hauptspeise} \PYG{o}{=} \PYG{n}{hauptspeise}\PYG{p}{;}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{nachspeise} \PYG{o}{=} \PYG{n}{nachspeise}\PYG{p}{;}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{name} \PYG{o}{=} \PYG{n}{name}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{vorspeiseEssen}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{vorspeise} \PYG{o}{!=} \PYG{k+kc}{null}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}lecker \PYGZhy{}  \PYGZdq{}} \PYG{o}{+} \PYG{n}{vorspeise}\PYG{p}{.}\PYG{n+na}{gibName}\PYG{p}{());}
+            \PYG{n}{vorspeise} \PYG{o}{=} \PYG{k+kc}{null}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Die Vorspeise wurde schon gegessen!\PYGZdq{}}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{hauptspeiseEssen}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{vorspeise} \PYG{o}{!=} \PYG{k+kc}{null}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}lecker \PYGZhy{} \PYGZdq{}} \PYG{o}{+} \PYG{n}{hauptspeise}\PYG{p}{.}\PYG{n+na}{gibName}\PYG{p}{());}
+            \PYG{n}{hauptspeise} \PYG{o}{=} \PYG{k+kc}{null}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Die Hauptspeise wurde schon gegessen!\PYGZdq{}}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{nachspeiseEssen}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{vorspeise} \PYG{o}{!=} \PYG{k+kc}{null}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}lecker \PYGZhy{} \PYGZdq{}} \PYG{o}{+} \PYG{n}{nachspeise}\PYG{p}{.}\PYG{n+na}{gibName}\PYG{p}{());}
+            \PYG{n}{nachspeise} \PYG{o}{=} \PYG{k+kc}{null}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Die Nachspeise wurde schon gegessen!\PYGZdq{}}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Kantine} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Kantine}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{Hauptspeise} \PYG{n}{hauptspeise1} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Hauptspeise}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Schnitzel\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mf}{9.6}\PYG{p}{);}
+        \PYG{n}{Hauptspeise} \PYG{n}{hauptspeise2} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Hauptspeise}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Schnitzel\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mf}{9.6}\PYG{p}{);}
+        \PYG{n}{Vorspeise} \PYG{n}{vorspeise1} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Vorspeise}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Suppe\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mf}{5.2}\PYG{p}{);}
+        \PYG{n}{Vorspeise} \PYG{n}{vorspeise2} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Vorspeise}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Suppe\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mf}{5.2}\PYG{p}{);}
+        \PYG{n}{Nachspeise} \PYG{n}{nachspeise1} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nachspeise}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Apfelstrudel\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mf}{6.10}\PYG{p}{);}
+        \PYG{n}{Nachspeise} \PYG{n}{nachspeise2} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nachspeise}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Apfelstrudel\PYGZdq{}}\PYG{p}{,} \PYG{l+m+mf}{6.10}\PYG{p}{);}
+        \PYG{n}{Menü} \PYG{n}{menü1} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Menü}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Super Menü\PYGZdq{}}\PYG{p}{,} \PYG{n}{vorspeise1}\PYG{p}{,} \PYG{n}{hauptspeise1}\PYG{p}{,} \PYG{n}{nachspeise1}\PYG{p}{);}
+        \PYG{n}{Menü} \PYG{n}{menü2} \PYG{o}{=} \PYG{n}{menü1}\PYG{p}{;}
+        \PYG{n}{Menü} \PYG{n}{menü3} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Menü}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Super Menü\PYGZdq{}}\PYG{p}{,} \PYG{n}{vorspeise2}\PYG{p}{,} \PYG{n}{hauptspeise2}\PYG{p}{,} \PYG{n}{nachspeise2}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

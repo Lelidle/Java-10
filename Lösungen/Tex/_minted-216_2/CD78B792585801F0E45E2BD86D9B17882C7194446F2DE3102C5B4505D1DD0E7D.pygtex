@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Menü} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{Nahrung} \PYG{n}{vorspeise}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Nahrung} \PYG{n}{hauptgericht}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Nahrung} \PYG{n}{nachspeise}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Menü}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{vorspeise} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{p}{(...);}
+        \PYG{n}{hauptgericht} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{p}{(...);}
+        \PYG{n}{nachspeise} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{p}{(...);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Zeitarithmetik
+comment1.params=stunde\ minute\ sekunde
+comment1.target=Zeitarithmetik(int,\ int,\ int)
+comment2.params=stundeNeu\ minuteNeu\ sekundeNeu
+comment2.target=void\ addieren(int,\ int,\ int)
+numComments=3

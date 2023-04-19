@@ -1,0 +1,96 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1144px" height="527px" viewBox="-0.5 -0.5 1144 527" content="&lt;mxfile scale=&quot;3&quot; border=&quot;0&quot;&gt;&lt;diagram id=&quot;swAi7KmYvHpMjfZar29N&quot; name=&quot;Page-1&quot;&gt;7VhNb9swDP01Pq7wRz6PidOuhxYYlsO2o2IptlBZMmSldvLrR9lSbEfp0CJF2wEBgsJ8IiWKj3yN40VxXn+XqMgeBSbMC31ce9HKC8PpbAx/NbBvgdHYAKmkuIWCDljTAzGgb9AdxaQcOCohmKLFEEwE5yRRAwxJKaqh21aw4akFSokDrBPEXPQXxSpr0Vk47fB7QtPMnhxM5u1KjqyzuUmZISyqHhTdelEshVDtU17HhOna2bq0cXcvrB4Tk4Sr1wSEbcAzYjtzt1KhAtiKFgDfC3Ywdput2tsSlBXNGeJgLbeCq7VZ8cFOMsrwA9qLnU4B4pMnay0zIekB/BGcsAoAgGWpDMPhRO9GGYsFExIALpoDuqC13swcI0kJYT/sVYMT6BHVA8cHVCqboGAMFSXdNCnrwBzJlPKlUErkNkrsOCbYOJgyEalI/WKpgyOB0PhE5ETJPbjYgJnh3DR9ZMyq66BgZLCs1z1jwxEyTZsed+54hQdD7XmaI4dmxA8og3p6ceQtRnlOYLlZ8UOHa7izaqiS4omccHOGLsRoysFkZKvDdNEozM7CwEoUerMCJZSnD43PatQhP83NNSQgdsua+cgoxoQ3vCik0ObYbYWgXDWlGS/hAwWM/ZuxN4bEY7CDzoaPdpcqFhzugmjDG4G+qIjujdeRHJ4n2ZAKLfwqUq3fJaQGgcMUwaBTxrTDo3I7a6Sm6rcuG9Sjtf6YIurnVd039tbgeKEVs9sQkDuqk2rW2xT0uf8eC0hT7GRivIxQwuynRPVa1K2rJAwp+jzc/ZKqTV3FQxxLBIqn5W7bDgRjRF4172LNmwwlLxh/oObN3qB5vsP1VfN6JE+/jua5/53+F82bf57mzZ1RKIgCgbtK3vtLXuR/oubZF6TrF73LRW/+dUTP/fqe0o3Su268cIJyXee0u5jLaE8Q30puAgXRUuHQmwNR+phllVFF1kCqPrOCF/7BWPmWSip01LdodPNeL1TRyaT57qRNzlBiwy6iZORQcmSC6Yr3CPrqlETRzfydtC/4MEbA7H4ladZ6PzVFt38B&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <clipPath id="mx-clip-376-97-388-70-0">
+            <rect x="376" y="97" width="388" height="70"/>
+        </clipPath>
+        <clipPath id="mx-clip-16-457-388-70-0">
+            <rect x="16" y="457" width="388" height="70"/>
+        </clipPath>
+        <clipPath id="mx-clip-736-457-388-70-0">
+            <rect x="736" y="457" width="388" height="70"/>
+        </clipPath>
+    </defs>
+    <g>
+        <path d="M 780 78 L 780 35.1 Q 780 0 744.9 0 L 395.1 0 Q 360 0 360 35.1 L 360 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 360 78 L 360 120.9 Q 360 156 395.1 156 L 744.9 156 Q 780 156 780 120.9 L 780 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 360 78 L 780 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="36px">
+            <text x="569.5" y="53.5">
+                stapel: Holzstapel
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-376-97-388-70-0)" font-size="36px">
+            <text x="377.5" y="131.5">
+                anzahlStämme = 2
+            </text>
+        </g>
+        <path d="M 210 360 L 512.22 156" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 420 438 L 420 395.1 Q 420 360 384.9 360 L 35.1 360 Q 0 360 0 395.1 L 0 438" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 438 L 0 480.9 Q 0 516 35.1 516 L 384.9 516 Q 420 516 420 480.9 L 420 438" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 438 L 420 438" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="36px">
+            <text x="209.5" y="413.5">
+                sandra:Holzfäller
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-16-457-388-70-0)" font-size="36px">
+            <text x="17.5" y="491.5">
+                anzahlStämme = 0
+            </text>
+        </g>
+        <path d="M 930 360 L 627.78 156" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1140 438 L 1140 395.1 Q 1140 360 1104.9 360 L 755.1 360 Q 720 360 720 395.1 L 720 438" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 720 438 L 720 480.9 Q 720 516 755.1 516 L 1104.9 516 Q 1140 516 1140 480.9 L 1140 438" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 720 438 L 1140 438" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" text-anchor="middle" font-size="36px">
+            <text x="929.5" y="413.5">
+                peter:Holzfäller
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-736-457-388-70-0)" font-size="36px">
+            <text x="737.5" y="491.5">
+                anzahlStämme = 2
+            </text>
+        </g>
+        <g transform="translate(-0.5 -0.5)scale(3)rotate(-34.1 100 85)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 85px; margin-left: 71px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                gibt ab&gt;
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="100" y="89" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    gibt ab&gt;
+                </text>
+            </switch>
+        </g>
+        <g transform="translate(-0.5 -0.5)scale(3)rotate(33.9 280 85)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 85px; margin-left: 251px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                &lt;gibt ab
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="280" y="89" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    &lt;gibt ab
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

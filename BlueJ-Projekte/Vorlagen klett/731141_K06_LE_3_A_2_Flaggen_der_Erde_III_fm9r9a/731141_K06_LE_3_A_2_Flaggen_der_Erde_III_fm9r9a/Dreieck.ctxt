@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Dreieck
+comment1.params=ax\ ay\ bx\ by\ cx\ cy\ f
+comment1.target=Dreieck(int,\ int,\ int,\ int,\ int,\ int,\ java.lang.String)
+comment2.params=ecke\ x\ y
+comment2.target=void\ eckeSetzen(char,\ int,\ int)
+comment3.params=
+comment3.target=void\ nachRechtsBewegen()
+comment4.params=
+comment4.target=void\ zeichnen()
+comment5.params=
+comment5.target=void\ auswischen()
+numComments=6

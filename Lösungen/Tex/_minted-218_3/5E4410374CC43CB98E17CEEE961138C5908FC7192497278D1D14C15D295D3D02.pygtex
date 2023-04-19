@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Perlenkette} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//Das Kreis\PYGZhy{}Array wird als Attribut der Klasse Perlenkette definiert}
+    \PYG{k+kd}{private} \PYG{n}{Kreis}\PYG{o}{[]} \PYG{n}{perlen}\PYG{p}{;}
+
+    \PYG{c+c1}{//a) Der Konstruktor soll zwölf Perlen mit Radius 10 erzeugen:}
+    \PYG{k+kd}{public} \PYG{n+nf}{Perlenkette}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Das Array wird initialisiert}
+        \PYG{n}{perlen} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Kreis}\PYG{o}{[}\PYG{l+m+mi}{12}\PYG{o}{]}\PYG{p}{;}
+        \PYG{c+c1}{//Das Array wird durchlaufen...}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//und an jeder Stelle des Arrays wird ein neuer Kreis gespeichert}
+            \PYG{c+c1}{//Der Konstruktor eines Kreises nimmt als Eingabeparameter den Radius}
+            \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Kreis}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{);}
+            \PYG{c+c1}{//Jetzt müssen die Perlen noch abhängig von ihrer Position in der Kette}
+            \PYG{c+c1}{//verschoben werden, dazu wird die \PYGZdq{}verschieben\PYGZdq{}\PYGZhy{}Methode der einzelnen}
+            \PYG{c+c1}{//Kreise verwendet}
+            \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{verschieben}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{10}\PYG{o}{*}\PYG{n}{i}\PYG{p}{,}\PYG{l+m+mi}{0}\PYG{p}{);}
+            \PYG{c+c1}{//die i\PYGZhy{}te Kugel muss dabei um i*Durchmesser einer Kugel verschoben werden}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

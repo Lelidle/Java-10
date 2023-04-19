@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{ausgeben}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Feld: \PYGZdq{}}\PYG{p}{);}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{print}\PYG{p}{(}\PYG{n}{array}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} \PYGZdq{}}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{();}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Minimum: \PYGZdq{}} \PYG{o}{+} \PYG{n}{minimum}\PYG{p}{());}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Summe: \PYGZdq{}} \PYG{o}{+} \PYG{n}{summe}\PYG{p}{());}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Durchschnitt: \PYGZdq{}} \PYG{o}{+} \PYG{n}{durchschnitt}\PYG{p}{());}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Anzahl kleiner als 5: \PYGZdq{}} \PYG{o}{+} \PYG{n}{anzahlKleinerAls}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{));}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{positionMinimum}\PYG{p}{());}
+    \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{gemischt} \PYG{o}{=} \PYG{n}{gemischtesFeld}\PYG{p}{();}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Gemischt: \PYGZdq{}}\PYG{p}{);}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{gemischt}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{print}\PYG{p}{(}\PYG{n}{gemischt}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} \PYGZdq{}}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

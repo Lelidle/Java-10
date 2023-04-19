@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Feldarbeiten
+comment1.params=n
+comment1.target=Feldarbeiten(int)
+comment2.params=zahl\ \u00FCbergeben
+comment2.target=boolean\ enth\u00E4lt(int,\ int[])
+comment2.text=Diese\ Methode\ durchl\u00E4uft\ das\ \u00FCbergebene\ Array\ vollst\u00E4ntdig\ und\ gibt\ \r\n\ \ \ \ true\ zur\u00FCck,\ falls\ die\ \u00FCbergebene\ Zahl\ gefunden\ wird.\r\n\ \ \ \ Wir\ \u00FCbergeben\ das\ array\ hier\ und\ greifen\ nicht\ auf\ das\ Attribut\ zur\u00FCck,\r\num\ die\ Methode\ auch\ in\ Teilaufgabe\ f)\ verwenden\ zu\ k\u00F6nnen.
+comment3.params=
+comment3.target=int\ minimum()
+comment4.params=
+comment4.target=int\ summe()
+comment5.params=
+comment5.target=double\ durchschnitt()
+comment6.params=k
+comment6.target=int\ anzahlKleinerAls(int)
+comment7.params=
+comment7.target=java.lang.String\ positionMinimum()
+comment8.params=
+comment8.target=int[]\ gemischtesFeld()
+comment9.params=
+comment9.target=void\ ausgeben()
+numComments=10

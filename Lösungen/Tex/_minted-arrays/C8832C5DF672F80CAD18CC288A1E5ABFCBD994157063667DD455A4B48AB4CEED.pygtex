@@ -1,0 +1,41 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kd}{class} \PYG{n+nc}{Tempmessung} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{double}\PYG{o}{[]} \PYG{n}{temperaturen} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{double}\PYG{o}{[}\PYG{l+m+mi}{365}\PYG{o}{]}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setzeZufallstemperaturwerte}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{temperaturen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{temperaturen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()} \PYG{o}{*} \PYG{l+m+mi}{40}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{gibTagMitHöchsterTemperatur}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{tag} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k+kt}{double} \PYG{n}{maxTemp} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{temperaturen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{temperaturen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{maxTemp}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{maxTemp} \PYG{o}{=} \PYG{n}{temperaturen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+                \PYG{n}{tag} \PYG{o}{=} \PYG{n}{i}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{tag}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{double} \PYG{n+nf}{gibNiedrigsteTemperatur}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{double} \PYG{n}{minTemp} \PYG{o}{=} \PYG{n}{Double}\PYG{p}{.}\PYG{n+na}{MAX\PYGZus{}VALUE}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{temperaturen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{temperaturen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{minTemp}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{minTemp} \PYG{o}{=} \PYG{n}{temperaturen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{minTemp}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{double} \PYG{n+nf}{gibDurchschnittstemperatur}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{double} \PYG{n}{summe} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{double} \PYG{n}{temp} \PYG{p}{:} \PYG{n}{temperaturen}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{summe} \PYG{o}{+=} \PYG{n}{temp}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{summe} \PYG{o}{/} \PYG{n}{temperaturen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

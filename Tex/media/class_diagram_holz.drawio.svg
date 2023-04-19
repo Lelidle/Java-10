@@ -1,0 +1,113 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1803px" height="359px" viewBox="-0.5 -0.5 1803 359" content="&lt;mxfile scale=&quot;3&quot; border=&quot;0&quot;&gt;&lt;diagram id=&quot;9RV6NWe2DC-uO5GRTdfW&quot; name=&quot;Page-1&quot;&gt;7ZlLb+IwEIB/DVJ76CoPoHCk0Mehlaplpe2eViYxiVXHjhxToL9+x7FNnrRpm93DCgmJzHjsZOYbDxMz8OfJ7lagNH7gIaYDzwl3A38x8DzXdX34Upq91owdRysiQUJjVCiW5BUbpTXbkBBnFUPJOZUkrSoDzhgOZEWHhODbqtma0+pdUxThhmIZINrU/iShjLV24l0W+jtMotje2R1P9UiCrLHxJItRyLcllX898OeCc6mvkt0cUxU8Gxc97+bI6OHBBGayywRPT3hBdGN8u+P0NZMoVcjyJ5R763a2JQlFDKSrNWdyaUZckBElEYPrAO6LBShesJAEIjYzA5KnoA1iQsN7tOcb9XRwm+DZSlcxF+QVlkXUrAnDQhr43rhisVQzQe2AVuAMbB6ty25N9YB2FcN7lEmjCDilKM3I6uBGgkRE2BWXkifGqBlRE2TlId6VVCbCt5gnWIo9mJhRC/uQ7VrcFqnj+UYXV9PGpKxJ1+iwckEULgzUIxnRJHyhlmSvKIYwDub+YDZMEhiaqVngY506OClzGoI/4zmnHPAuGNdpQCitqWwmULyWR/MgS1FAWHSf2yyGhea7cV+pOMxd03x3xCQMMVMMuUQSaWCKTsrhkfPwjK7gA1GcO99GgxE8+Bxkt5Dho8yFnHMGviCS48SQDVusMqIFtNcZtCHrjbuR9XoAO2xwbZCjJCeiydlC5X4KWwIAKC44/VAYFxdug6XfZOm3cKNohekjz4gkXK0vtG2N53vIqjlJWIwF6QnlyOuGcvJ1kqMWkuCCU1Tis/PTrvw8yq711uq+VG79IzCzotTOVpTgNRbsLC+3phaf6wr8wmGpE+xPw552hN1HCR63Nk9rDZpS6INOHVQ/HdTQeb+F8lpbKO/rmC9PHdRnt++4M+g3Oqg2sH1s38mpg/pAB/VhlG0dVBvKHjoo121BqX51Y6jHd1DoMDs7/b72QrVr5e1jg07foFo0USewvYCd/MPK67Xt1xo6zMKZOqor6MQysY0NuCn2T2XhlwoqRMuIC9uyaGlvpR2RT6Xr0iyQiklKOMxh4Q1RruRSuaWa6FEjudO3ep2Mb0SAKw0FrBRha2UCgMPKyWOTVgnPqIWO1QlMkSQv1fPKNmTmDo9cv4uYVPFrR1bupPZupN0xs8rni/WFLmsL1V+ydBAaC+UZdHC7W1I1T7rYsYJQSqWP1oaj/fnhB34bE4mXUBPUPbcCpfne37AQh/11xP5oWg2s0yzM47/0kus1X3LhYccoUZ6yVZbmLjo9qoxMFTuKI/kbrf5ftMD2XbSuPTX6IlsQiz8b9KYr/rLxr/8A&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs>
+        <clipPath id="mx-clip-16-97-658-70-0">
+            <rect x="16" y="97" width="658" height="70"/>
+        </clipPath>
+        <clipPath id="mx-clip-16-199-658-82-0">
+            <rect x="16" y="199" width="658" height="82"/>
+        </clipPath>
+        <clipPath id="mx-clip-16-289-658-70-0">
+            <rect x="16" y="289" width="658" height="70"/>
+        </clipPath>
+        <clipPath id="mx-clip-1156-97-628-70-0">
+            <rect x="1156" y="97" width="628" height="70"/>
+        </clipPath>
+        <clipPath id="mx-clip-1156-199-628-70-0">
+            <rect x="1156" y="199" width="628" height="70"/>
+        </clipPath>
+        <clipPath id="mx-clip-1156-277-628-70-0">
+            <rect x="1156" y="277" width="628" height="70"/>
+        </clipPath>
+    </defs>
+    <g>
+        <path d="M 0 78 L 0 0 L 690 0 L 690 78" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="all"/>
+        <path d="M 0 78 L 0 348 L 690 348 L 690 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 0 78 L 690 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="36px">
+            <text x="344.5" y="53.5">
+                Holzstapel
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-16-97-658-70-0)" font-size="36px">
+            <text x="17.5" y="131.5">
+                - anzahlStämme: int
+            </text>
+        </g>
+        <path d="M 0 168 L 690 168" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-16-199-658-82-0)" font-size="36px">
+            <text x="17.5" y="233.5">
+                + Holzstapel()
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-16-289-658-70-0)" font-size="36px">
+            <text x="17.5" y="323.5">
+                + stämmeAbliefern(int anzahl): void
+            </text>
+        </g>
+        <path d="M 1140 78 L 1140 0 L 1800 0 L 1800 78" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1140 78 L 1140 336 L 1800 336 L 1800 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 1140 78 L 1800 78" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" font-weight="bold" pointer-events="none" text-anchor="middle" font-size="36px">
+            <text x="1469.5" y="53.5">
+                Holzfäller
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1156-97-628-70-0)" font-size="36px">
+            <text x="1157.5" y="131.5">
+                - anzahlStämme: int
+            </text>
+        </g>
+        <path d="M 1140 168 L 1800 168" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1156-199-628-70-0)" font-size="36px">
+            <text x="1157.5" y="233.5">
+                + holzHacken(): void
+            </text>
+        </g>
+        <g fill="rgb(0, 0, 0)" font-family="Helvetica" pointer-events="none" clip-path="url(#mx-clip-1156-277-628-70-0)" font-size="36px">
+            <text x="1157.5" y="311.5">
+                + holzAbliefern(): void
+            </text>
+        </g>
+        <path d="M 1140 117 L 690 117" fill="none" stroke="rgb(0, 0, 0)" stroke-width="3" stroke-miterlimit="10" pointer-events="none"/>
+        <g transform="translate(-0.5 -0.5)scale(3)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 58px; height: 1px; padding-top: 55px; margin-left: 340px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                n
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="369" y="59" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    n
+                </text>
+            </switch>
+        </g>
+        <g transform="translate(-0.5 -0.5)scale(3)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 123px; height: 1px; padding-top: 55px; margin-left: 216px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: none; white-space: normal; overflow-wrap: normal;">
+                                1         &lt;legt_ab
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="278" y="59" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    1         &lt;legt_ab
+                </text>
+            </switch>
+        </g>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

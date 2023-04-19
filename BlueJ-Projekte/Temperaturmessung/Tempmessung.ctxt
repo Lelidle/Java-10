@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Tempmessung
+comment1.params=
+comment1.target=Tempmessung()
+comment2.params=
+comment2.target=int\ w\u00E4rmsterTag()
+comment3.params=
+comment3.target=double\ durchschnittsTemperatur()
+numComments=4

@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//e)}
+\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{positionSetzen}\PYG{p}{(}\PYG{k+kt}{double} \PYG{n}{mitteX0}\PYG{p}{,} \PYG{k+kt}{double} \PYG{n}{mitteY0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//Die erste Perle in der Reihe wird an die neue Position gesetzt}
+    \PYG{n}{perlen}\PYG{o}{[}\PYG{l+m+mi}{0}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mittelpunktSetzen}\PYG{p}{(}\PYG{n}{mitteX0}\PYG{p}{,} \PYG{n}{mitteY0}\PYG{p}{);}
+    \PYG{c+c1}{//Ab der zweiten Perle muss nachgezogen werden!}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Für die jeweils i\PYGZhy{}te Perle (also perlen[i]) setzen wir den neuen Mittelpunkt,}
+        \PYG{c+c1}{// indem wir uns von der  vorangehenden Perle (also perlen[i\PYGZhy{}1]) Informationen holen.}
+        \PYG{c+c1}{//x\PYGZhy{}Richtung: Wir starten beim Mittelpunkt der vorangehenden Perle (mitteXGeben())}
+        \PYG{c+c1}{//und laufen dann den Radius der vorangehenden Perle und dann den Radius}
+        \PYG{c+c1}{//der aktuellen Perle}
+        \PYG{c+c1}{//y\PYGZhy{}Richtung: Wir bleiben auf derselben Höhe, verwenden also einfach mitteY0}
+        \PYG{c+c1}{//Für eine bessere Übersichtlichkeit ist der Methodenaufruf hier auf}
+        \PYG{c+c1}{//mehrere Zeilen verteilt}
+        \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mittelpunktSetzen}\PYG{p}{(}
+            \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteXGeben}\PYG{p}{()}
+            \PYG{o}{+} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{()}
+            \PYG{o}{+} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{(),}
+            \PYG{n}{mitteY0}
+        \PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Bibliothek
+comment1.params=
+comment1.target=Bibliothek()
+comment2.params=isbn\ mitgliedsnummer
+comment2.target=Buch\ ausleihen(int,\ int)
+numComments=3

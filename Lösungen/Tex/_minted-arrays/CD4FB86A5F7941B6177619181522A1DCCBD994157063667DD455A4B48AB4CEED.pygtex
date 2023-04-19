@@ -1,0 +1,54 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{k+kd}{class} \PYG{n+nc}{Noten} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{note}\PYG{p}{;}
+    \PYG{k+kt}{int} \PYG{n}{anzahl}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Noten}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{note} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{l+m+mi}{10}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{anzahl} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{eintragen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{neueNote}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{anzahl} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{10}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{neueNote} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{1} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{neueNote} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{6}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{note}\PYG{o}{[}\PYG{n}{anzahl}\PYG{o}{]} \PYG{o}{=} \PYG{n}{neueNote}\PYG{p}{;}
+                \PYG{n}{anzahl}\PYG{o}{++}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+                \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Ungültige Note. Bitte zwischen 1 und 6 wählen.\PYGZdq{}}\PYG{p}{);}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Fehler: Es können nur maximal 10 Noten eingetragen werden.\PYGZdq{}}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{double} \PYG{n+nf}{durchschnitt}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{summe} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{anzahl}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{summe} \PYG{o}{+=} \PYG{n}{note}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)} \PYG{n}{summe} \PYG{o}{/} \PYG{n}{anzahl}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{gibNote}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{i} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{anzahl}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{return} \PYG{n}{note}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Fehler: Die angegebene Position ist ungültig.\PYGZdq{}}\PYG{p}{);}
+            \PYG{k}{return} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{setzeNote}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{neueNote}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{if} \PYG{p}{(}\PYG{n}{i} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{0} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{anzahl}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if} \PYG{p}{(}\PYG{n}{neueNote} \PYG{o}{\PYGZgt{}=} \PYG{l+m+mi}{1} \PYG{o}{\PYGZam{}\PYGZam{}} \PYG{n}{neueNote} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{6}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{note}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{neueNote}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+                \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Ungültige Note. Bitte zwischen 1 und 6 wählen.\PYGZdq{}}\PYG{p}{);}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Fehler: Die angegebene Position ist ungültig.\PYGZdq{}}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

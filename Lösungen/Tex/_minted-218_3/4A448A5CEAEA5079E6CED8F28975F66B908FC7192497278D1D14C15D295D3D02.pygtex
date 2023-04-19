@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//b)}
+\PYG{k+kd}{public} \PYG{n+nf}{Perlenkette}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{anzahl}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//Die relevante Änderung, das Array wird so groß wie gewünscht erzeugt}
+    \PYG{c+c1}{//Nicht gefordert in der Aufgabenstellung, aber sinnvoll:}
+    \PYG{c+c1}{//eine Überprüfung, ob die Eingabe sinnvoll ist!}
+    \PYG{c+c1}{//Wenn die Anzahl kleiner oder gleich 0 ist...}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{anzahl} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//... wird die Anzahl auf 5 festgelegt\PYGZhy{}}
+        \PYG{n}{anzahl} \PYG{o}{=} \PYG{l+m+mi}{5}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{n}{perlen} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Kreis}\PYG{o}{[}\PYG{n}{anzahl}\PYG{o}{]}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Kreis}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{);}
+        \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{verschieben}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{l+m+mi}{10}\PYG{o}{*}\PYG{n}{i}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

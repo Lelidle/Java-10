@@ -1,0 +1,41 @@
+[ERROR Apr 19 11:31:59.429780700, defaults.go:149] Could not load configuration: Failed to load configuration.
+
+Stacktrace: D:/a/cli/cli/internal/logging/logging.go:github.com/ActiveState/cli/internal/logging.Error:258
+D:/a/cli/cli/internal/logging/defaults.go:github.com/ActiveState/cli/internal/logging.init.0:149
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.doInit:5652
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.doInit:5647
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.doInit:5647
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.main:191
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/asm_amd64.s:runtime.goexit:1374
+
+[DEBUG Apr 19 11:31:59.510643400, defaults.go:178] Args: [C:\Users\larsw\AppData\Roaming\ActiveState\bin\state.exe --version]
+[DEBUG Apr 19 11:31:59.511643700, locale.go:34] Init
+[DEBUG Apr 19 11:31:59.552677600, secrets.go:35] Gcloud Secretmanager failed to initialize (ignore if you're not trying to use gcloud): google: could not find default credentials. See https://developers.google.com/accounts/docs/application-default-credentials for more information.
+[DEBUG Apr 19 11:31:59.558678600, output.go:52] Requested outputer for 
+[DEBUG Apr 19 11:31:59.558678600, output.go:57] Using Plain outputer
+[DEBUG Apr 19 11:31:59.559679400, main.go:119] ConfigPath: C:\Users\larsw\AppData\Roaming\activestate\cli-release
+[DEBUG Apr 19 11:31:59.559679400, main.go:120] CachePath: C:\Users\larsw\AppData\Local\activestate
+[DEBUG Apr 19 11:31:59.561679100, subshell.go:103] Detected SHELL: cmd
+[DEBUG Apr 19 11:31:59.562679700, subshell.go:135] Using binary: C:\Windows\System32\cmd.exe
+[DEBUG Apr 19 11:31:59.564288700, secrets.go:61] secrets-api scheme=https host=platform.activestate.com base_path=/api/secrets/v1
+[DEBUG Apr 19 11:31:59.566680800, secrets.go:61] secrets-api scheme=https host=platform.activestate.com base_path=/api/secrets/v1
+[DEBUG Apr 19 11:31:59.569681500, autoupdate.go:28] Not running auto updates
+[DEBUG Apr 19 11:31:59.569681500, deprecation.go:198] Using cached deprecation information
+[DEBUG Apr 19 11:31:59.570681900, errors.go:97] Returning input error:
+You are running a version of the State Tool that is no longer supported! You will be encountering issues.
+
+Reason for deprecation: 
+  [NOTICE]Unfortunately the version of the State Tool you are using is no longer supported.
+
+Please install the latest version by following the installation documentation here: https://docs.activestate.com/platform/state/install/
+
+If you are having trouble installing the new version you may first want to uninstall the old version: https://docs.activestate.com/platform/state/troubleshooting/uninstall/[/RESET]
+
+Please update by running [ACTIONABLE]`state update`[/RESET].
+
+Created at:
+D:/a/cli/cli/cmd/state/main.go:main.run:200
+D:/a/cli/cli/cmd/state/main.go:main.main:82
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.main:204
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/asm_amd64.s:runtime.goexit:1374
+[DEBUG Apr 19 11:31:59.570681900, termutils.go:17] Cannot get terminal size: The handle is invalid.

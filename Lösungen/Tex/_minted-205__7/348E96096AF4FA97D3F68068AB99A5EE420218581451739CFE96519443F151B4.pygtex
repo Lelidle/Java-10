@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n+nf}{gemischtesFeld}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{gemischt} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{o}{]}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)\PYGZob{}}
+        \PYG{c+c1}{//Wir verwenden hier Math.floor() . also immer abrunden, damit wir den bereich}
+        \PYG{c+c1}{//des arrays nicht verlassen!}
+        \PYG{k+kt}{int} \PYG{n}{zufallszahl} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{floor}\PYG{p}{(}\PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()}\PYG{o}{*}\PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{);}
+        \PYG{k}{while}\PYG{p}{(}\PYG{n}{enthält}\PYG{p}{(}\PYG{n}{array}\PYG{o}{[}\PYG{n}{zufallszahl}\PYG{o}{]}\PYG{p}{,} \PYG{n}{gemischt}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+            \PYG{n}{zufallszahl} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{floor}\PYG{p}{(}\PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()}\PYG{o}{*}\PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{gemischt}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{array}\PYG{o}{[}\PYG{n}{zufallszahl}\PYG{o}{]}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{gemischt}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

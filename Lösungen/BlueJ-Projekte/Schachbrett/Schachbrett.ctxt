@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Schachbrett
+comment1.params=
+comment1.target=Schachbrett()
+comment2.params=yVerschiebung
+comment2.target=Quadrat[]\ reiheBauen(int)
+numComments=3

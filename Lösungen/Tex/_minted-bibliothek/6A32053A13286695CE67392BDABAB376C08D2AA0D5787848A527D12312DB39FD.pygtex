@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Bibliothek} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Regal}\PYG{o}{[]} \PYG{n}{regale}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Bibliothek}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{name} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Neumarkter Stadtbibiothek\PYGZdq{}}\PYG{p}{;}
+        \PYG{n}{regale} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Regal}\PYG{o}{[}\PYG{l+m+mi}{64}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{64}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{regale}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Regal}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{n}{Buch} \PYG{n+nf}{ausleihen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{isbn}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{mitgliedsnummer}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Es müssen alle 64 Regale durchsucht werden:}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{64}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//Wir versuchen das Buch im Regal zu finden und in der Variable}
+            \PYG{c+c1}{//buchGefunden zwischenzuspeichern. Dabei geben wir die Mitgliedsnummer}
+            \PYG{c+c1}{//als Übergabeparameter mit, damit das Regal im Buch eintragen kann,}
+            \PYG{c+c1}{//wer es ausgeliehen hat.}
+            \PYG{c+c1}{//Hinweis: Die buchSuchen\PYGZhy{}Methode gibt es natürlich noch nicht!}
+            \PYG{n}{Buch} \PYG{n}{buch} \PYG{o}{=} \PYG{n}{regale}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{buchSuchen}\PYG{p}{(}\PYG{n}{isbn}\PYG{p}{,} \PYG{n}{mitgliedsnummer}\PYG{p}{);}
+            \PYG{c+c1}{//Es kann sein, dass das Buch in diesem Regal nicht war, d.h. wir}
+            \PYG{c+c1}{//überprüfen, ob das buch wirklich existiert oder nur eine}
+            \PYG{c+c1}{//Nullreferenz ist (!= bedeute ungleich!):}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{buch} \PYG{o}{!=} \PYG{k+kc}{null}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{c+c1}{//in diesem Fall existiert das Buch und wir geben es an den Besucher:}
+                \PYG{k}{return} \PYG{n}{buch}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{c+c1}{//Haben wir die gesamte Wiederholung durchlaufen und kein Buch gefunden,}
+        \PYG{c+c1}{//müssen wir null zurückgeben, am Besten mit einer Fehlermeldung:}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Leider wurde kein passendes Buch gefunden\PYGZdq{}}\PYG{p}{);}
+        \PYG{k}{return} \PYG{k+kc}{null}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

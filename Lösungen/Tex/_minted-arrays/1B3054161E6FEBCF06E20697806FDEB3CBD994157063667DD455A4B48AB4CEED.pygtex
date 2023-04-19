@@ -1,0 +1,23 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{bubbleSort} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n+nf}{erzeugeZufallsfeld}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{länge}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{feld} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{n}{länge}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{länge}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)} \PYG{p}{(}\PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()} \PYG{o}{*} \PYG{l+m+mi}{100}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{feld}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{sortiereFeld}\PYG{p}{(}\PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{feld}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{temp}\PYG{p}{;}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{feld}\PYG{p}{.}\PYG{n+na}{length} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{j} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{j} \PYG{o}{\PYGZlt{}} \PYG{n}{feld}\PYG{p}{.}\PYG{n+na}{length} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1} \PYG{o}{\PYGZhy{}} \PYG{n}{i}\PYG{p}{;} \PYG{n}{j}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{k}{if} \PYG{p}{(}\PYG{n}{feld}\PYG{o}{[}\PYG{n}{j}\PYG{o}{]} \PYG{o}{\PYGZgt{}} \PYG{n}{feld}\PYG{o}{[}\PYG{n}{j} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                    \PYG{n}{temp} \PYG{o}{=} \PYG{n}{feld}\PYG{o}{[}\PYG{n}{j}\PYG{o}{]}\PYG{p}{;}
+                    \PYG{n}{feld}\PYG{o}{[}\PYG{n}{j}\PYG{o}{]} \PYG{o}{=} \PYG{n}{feld}\PYG{o}{[}\PYG{n}{j} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{;}
+                    \PYG{n}{feld}\PYG{o}{[}\PYG{n}{j} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{o}{]} \PYG{o}{=} \PYG{n}{temp}\PYG{p}{;}
+                \PYG{p}{\PYGZcb{}}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

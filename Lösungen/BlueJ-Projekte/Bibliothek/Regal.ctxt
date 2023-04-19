@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Regal
+comment1.params=nummerNeu
+comment1.target=Regal(int)
+comment2.params=isbn\ mitgliedsnummer
+comment2.target=Buch\ buchSuchen(int,\ int)
+numComments=3

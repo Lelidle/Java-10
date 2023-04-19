@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{minimum}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{// Wir nehmen den ersten Eintrag als Minimum an.}
+    \PYG{k+kt}{int} \PYG{n}{minimum} \PYG{o}{=} \PYG{n}{array}\PYG{o}{[}\PYG{l+m+mi}{0}\PYG{o}{]}\PYG{p}{;}
+    \PYG{c+c1}{// Das gesamte Feld wird durchlaufen}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Falls eine kleinere Zahl gefunden wird, wird ein neues Minimum gespeichert.}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{array}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{minimum}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{minimum} \PYG{o}{=} \PYG{n}{array}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{minimum}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

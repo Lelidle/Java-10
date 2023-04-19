@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{würfelNMal}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{anzahl}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{c+c1}{//...}
+\PYG{+w}{        }\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{ergebnisse}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{           }\PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{print}\PYG{p}{((}\PYG{n}{ergebnisse}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{)}\PYG{o}{/}\PYG{n}{n}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{} \PYGZdq{}}\PYG{p}{);}
+\PYG{+w}{       }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

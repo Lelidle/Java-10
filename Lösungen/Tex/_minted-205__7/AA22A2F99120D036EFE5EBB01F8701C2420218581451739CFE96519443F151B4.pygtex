@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{anzahlKleinerAls}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{k}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{anzahl} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Wenn eine kleinere Zahl b eim Durchlauf gefunden wird, wird jedes Mal der Zähler}
+        \PYG{c+c1}{//um eins hochgesetzt.}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{array}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{k}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//Kurzschreibweise für anzahl = anzahl + 1}
+            \PYG{n}{anzahl}\PYG{o}{++}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{k}{return} \PYG{n}{anzahl}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Besucher} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{mitgliedsnummer}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{Buch}\PYG{o}{[]} \PYG{n}{ausgelieheneBücher}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+    \PYG{c+c1}{//Eine Referenz auf ein Bibiotheksobjekt wird deklariert:}
+    \PYG{k+kd}{private} \PYG{n}{Bibliothek} \PYG{n}{bib}\PYG{p}{;}
+    \PYG{c+c1}{//die Anzahl der bisher ausgeliehenen Bücher als Hilfsattribut:}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{anzahlAusgeliehen}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Besucher}\PYG{p}{(}\PYG{n}{String} \PYG{n}{nameNeu}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{mitgliedsnummerNeu}\PYG{p}{,} \PYG{n}{Bibliothek} \PYG{n}{bibNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{name} \PYG{o}{=} \PYG{n}{nameNeu}\PYG{p}{;}
+        \PYG{n}{mitgliedsnummer} \PYG{o}{=} \PYG{n}{mitgliedsnummerNeu}\PYG{p}{;}
+        \PYG{n}{ausgelieheneBücher} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Buch}\PYG{o}{[}\PYG{l+m+mi}{6}\PYG{o}{]}\PYG{p}{;}
+        \PYG{n}{bib} \PYG{o}{=} \PYG{n}{bibNeu}\PYG{p}{;}
+        \PYG{c+c1}{//Am Anfang sind 0 Bücher ausgeliehen:}
+        \PYG{n}{anzahlAusgeliehen} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{ausleihen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{isbn}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Wir leihen uns ein Buch aus der Bibiothek, indem wir die (noch zu definierende)}
+        \PYG{c+c1}{//Methode ausleihen auf dem Bibliotheks\PYGZhy{}Objekt aufrufen:}
+        \PYG{n}{Buch} \PYG{n}{geliehenesBuch} \PYG{o}{=} \PYG{n}{bib}\PYG{p}{.}\PYG{n+na}{ausleihen}\PYG{p}{(}\PYG{n}{isbn}\PYG{p}{,} \PYG{n}{mitgliedsnummer}\PYG{p}{);}
+        \PYG{c+c1}{//und speichern es in unserem Array, an einer noch freien Stelle.}
+        \PYG{c+c1}{//praktischerweise ist die Anzahl der bisher ausgeliehenen Bücher}
+        \PYG{c+c1}{//eine passende Stelle!}
+        \PYG{n}{ausgelieheneBücher}\PYG{o}{[}\PYG{n}{anzahlAusgeliehen}\PYG{o}{]} \PYG{o}{=} \PYG{n}{geliehenesBuch}\PYG{p}{;}
+        \PYG{c+c1}{//Dann müssen wir noch die Variable hochzählen:}
+        \PYG{n}{anzahlAusgeliehen}\PYG{o}{++}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

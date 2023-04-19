@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Sticker
+comment1.params=nummer\ name
+comment1.target=Sticker(int,\ java.lang.String)
+numComments=2

@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{n}{String} \PYG{n+nf}{positionMinimum}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//Wir nutzen zuerst unsere bereits geschriebene Methode, um das Minimum zu bestimmen...}
+    \PYG{k+kt}{int} \PYG{n}{minimum} \PYG{o}{=} \PYG{n}{minimum}\PYG{p}{();}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//dann suchen wir die richtige Position und geben die Position als String zurück.}
+        \PYG{k}{if}\PYG{p}{(}\PYG{n}{array}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{==} \PYG{n}{minimum}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{return} \PYG{l+s}{\PYGZdq{}Minimum: \PYGZdq{}} \PYG{o}{+} \PYG{n}{minimum} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} an Position: \PYGZdq{}} \PYG{o}{+} \PYG{n}{i}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{c+c1}{//Falls das Minimum aus irgendwelchen Gründen nicht gefunden wird,}
+    \PYG{c+c1}{// wird einfach ein leerer String zurückgegeben.}
+    \PYG{k}{return} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

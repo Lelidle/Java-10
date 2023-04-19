@@ -1,0 +1,41 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Nahrung} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{double} \PYG{n}{preis}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Nahrung}\PYG{p}{(}\PYG{n}{String} \PYG{n}{name}\PYG{p}{,} \PYG{k+kt}{double} \PYG{n}{preis}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{name} \PYG{o}{=} \PYG{n}{name}\PYG{p}{;}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{preis} \PYG{o}{=} \PYG{n}{preis}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{n}{String} \PYG{n+nf}{gibName}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n}{name}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{double} \PYG{n+nf}{gibPreis}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{n}{preis}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{preiserhoehen}\PYG{p}{(}\PYG{k+kt}{double} \PYG{n}{erhoehung}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{preis} \PYG{o}{+=} \PYG{n}{erhoehung}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Vorspeise} \PYG{k+kd}{extends} \PYG{n}{Nahrung} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Vorspeise}\PYG{p}{(}\PYG{n}{String} \PYG{n}{name}\PYG{p}{,} \PYG{k+kt}{double} \PYG{n}{preis}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kd}{super}\PYG{p}{(}\PYG{n}{name}\PYG{p}{,} \PYG{n}{preis}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Hauptspeise} \PYG{k+kd}{extends} \PYG{n}{Nahrung} \PYG{p}{\PYGZob{}}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Hauptspeise}\PYG{p}{(}\PYG{n}{String} \PYG{n}{name}\PYG{p}{,} \PYG{k+kt}{double} \PYG{n}{preis}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kd}{super}\PYG{p}{(}\PYG{n}{name}\PYG{p}{,} \PYG{n}{preis}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Nachspeise} \PYG{k+kd}{extends} \PYG{n}{Nahrung} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{n+nf}{Nachspeise}\PYG{p}{(}\PYG{n}{String} \PYG{n}{name}\PYG{p}{,} \PYG{k+kt}{double} \PYG{n}{preis}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kd}{super}\PYG{p}{(}\PYG{n}{name}\PYG{p}{,} \PYG{n}{preis}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

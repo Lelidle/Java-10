@@ -1,0 +1,33 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{Feldarbeiten} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{array}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Feldarbeiten}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{array} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{n}{n}\PYG{o}{]}\PYG{p}{;}
+        \PYG{c+c1}{//Wir füllen alle Felder}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//Eine Zufallszahl zwischen 0 und 100 wird erzeugt}
+            \PYG{k+kt}{int} \PYG{n}{zufallszahl} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()}\PYG{o}{*}\PYG{l+m+mi}{100}\PYG{p}{;}
+            \PYG{c+cm}{/*Die Wiederholung prüft in jedem Schritt, ob die Zufallszahl in unserem}
+\PYG{c+cm}{            Array bereits enthalten ist, falls ja, wird neu gewürfelt. Gibt \PYGZdq{}enthält\PYGZdq{}}
+\PYG{c+cm}{            das erste Mal \PYGZdq{}false\PYGZdq{} zurück, wird die Zahl gespeichert.*/}
+            \PYG{k}{while}\PYG{p}{(}\PYG{n}{enthält}\PYG{p}{(}\PYG{n}{zufallszahl}\PYG{p}{,} \PYG{n}{array}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+                \PYG{n}{zufallszahl} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{round}\PYG{p}{(}\PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()}\PYG{o}{*}\PYG{l+m+mi}{100}\PYG{p}{);}
+            \PYG{p}{\PYGZcb{}}
+            \PYG{n}{array}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{zufallszahl}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{c+cm}{/*Diese Methode durchläuft das übergebene Array vollstäntdig und gibt}
+\PYG{c+cm}{    true zurück, falls die übergebene Zahl gefunden wird.}
+\PYG{c+cm}{    Wir übergeben das array hier und greifen nicht auf das Attribut zurück,}
+\PYG{c+cm}{    um die Methode auch in Teilaufgabe f) verwenden zu können.*/}
+    \PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n+nf}{enthält}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{zahl}\PYG{p}{,} \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{übergeben}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{übergeben}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{übergeben}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{==} \PYG{n}{zahl}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{k}{return} \PYG{k+kc}{true}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{k+kc}{false}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

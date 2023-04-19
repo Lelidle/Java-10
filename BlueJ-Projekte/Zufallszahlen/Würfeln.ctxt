@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=W\u00FCrfeln
+comment1.params=
+comment1.target=int\ w\u00FCrfeln()
+comment2.params=n
+comment2.target=void\ w\u00FCrfelNMal(int)
+comment3.params=array
+comment3.target=void\ ausgeben(int[])
+numComments=4

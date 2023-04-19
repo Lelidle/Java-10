@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//c)}
+\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{farbeSetzen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{nummer}\PYG{p}{,} \PYG{n}{String} \PYG{n}{farbe}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//zunächst wird geprüft, ob die eingegeben Zahl innerhalb der Feldgrenzen liegt}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{nummer} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{0} \PYG{o}{||} \PYG{n}{nummer} \PYG{o}{\PYGZgt{}=} \PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Diese Perle gibt es nicht!\PYGZdq{}}\PYG{p}{);}
+        \PYG{c+c1}{//falls nicht wird eine Meldung ausgegeben und beendet!}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{c+c1}{//Andernfalls wird die Perle (der Kreis) an der Stelle \PYGZdq{}nummer\PYGZdq{} mit Hilfe der}
+    \PYG{c+c1}{//Kreis\PYGZhy{}Methode farbeSetzen (deswegen Punktnotation!) auf die übergebene}
+    \PYG{c+c1}{//Farbe gesetzt}
+    \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{nummer}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{farbeSetzen}\PYG{p}{(}\PYG{n}{farbe}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

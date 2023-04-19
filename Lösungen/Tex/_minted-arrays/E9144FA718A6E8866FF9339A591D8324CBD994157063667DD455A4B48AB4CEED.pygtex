@@ -1,0 +1,94 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{Feldarbeiten} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{feld}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Feldarbeiten}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{n} \PYG{o}{=} \PYG{n}{n}\PYG{p}{;}
+        \PYG{k}{this}\PYG{p}{.}\PYG{n+na}{feld} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{n}{n}\PYG{o}{]}\PYG{p}{;}
+        \PYG{n}{Random} \PYG{n}{rand} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Random}\PYG{p}{();}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{zufallszahl} \PYG{o}{=} \PYG{n}{rand}\PYG{p}{.}\PYG{n+na}{nextInt}\PYG{p}{();}
+            \PYG{k}{while}\PYG{p}{(}\PYG{n}{contains}\PYG{p}{(}\PYG{n}{zufallszahl}\PYG{p}{))} \PYG{p}{\PYGZob{}}
+                \PYG{n}{zufallszahl} \PYG{o}{=} \PYG{n}{rand}\PYG{p}{.}\PYG{n+na}{nextInt}\PYG{p}{();}
+            \PYG{p}{\PYGZcb{}}
+            \PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{zufallszahl}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n+nf}{contains}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{zahl}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{==} \PYG{n}{zahl}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{k}{return} \PYG{k+kc}{true}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{k+kc}{false}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{minimum}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{min} \PYG{o}{=} \PYG{n}{feld}\PYG{o}{[}\PYG{l+m+mi}{0}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{min}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{min} \PYG{o}{=} \PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{min}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{summe}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{sum} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{sum} \PYG{o}{+=} \PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{sum}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{double} \PYG{n+nf}{durchschnitt}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)} \PYG{n}{summe}\PYG{p}{()} \PYG{o}{/} \PYG{n}{n}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{anzahlKleinerAls}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{k}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{count} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{\PYGZlt{}} \PYG{n}{k}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{n}{count}\PYG{o}{++}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{count}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{n}{String} \PYG{n+nf}{positionMinimum}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int} \PYG{n}{min} \PYG{o}{=} \PYG{n}{minimum}\PYG{p}{();}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k}{if}\PYG{p}{(}\PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{==} \PYG{n}{min}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+                \PYG{k}{return} \PYG{l+s}{\PYGZdq{}Minimum: \PYGZdq{}} \PYG{o}{+} \PYG{n}{min} \PYG{o}{+} \PYG{l+s}{\PYGZdq{} an Position: \PYGZdq{}} \PYG{o}{+} \PYG{n}{i}\PYG{p}{;}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{l+s}{\PYGZdq{}\PYGZdq{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n+nf}{gemischtesFeld}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{gemischt} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{n}{n}\PYG{o}{]}\PYG{p}{;}
+        \PYG{n}{ArrayList}\PYG{o}{\PYGZlt{}}\PYG{n}{Integer}\PYG{o}{\PYGZgt{}} \PYG{n}{list} \PYG{o}{=} \PYG{k}{new} \PYG{n}{ArrayList}\PYG{o}{\PYGZlt{}\PYGZgt{}}\PYG{p}{();}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{list}\PYG{p}{.}\PYG{n+na}{add}\PYG{p}{(}\PYG{n}{feld}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{n}{Collections}\PYG{p}{.}\PYG{n+na}{shuffle}\PYG{p}{(}\PYG{n}{list}\PYG{p}{);}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{n}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{gemischt}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{n}{list}\PYG{p}{.}\PYG{n+na}{get}\PYG{p}{(}\PYG{n}{i}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+        \PYG{k}{return} \PYG{n}{gemischt}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{ausgeben}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Feld: \PYGZdq{}} \PYG{o}{+} \PYG{n}{Arrays}\PYG{p}{.}\PYG{n+na}{toString}\PYG{p}{(}\PYG{n}{feld}\PYG{p}{));}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Minimum: \PYGZdq{}} \PYG{o}{+} \PYG{n}{minimum}\PYG{p}{());}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Summe: \PYGZdq{}} \PYG{o}{+} \PYG{n}{summe}\PYG{p}{());}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Durchschnitt: \PYGZdq{}} \PYG{o}{+} \PYG{n}{durchschnitt}\PYG{p}{());}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Anzahl kleiner als 5: \PYGZdq{}} \PYG{o}{+} \PYG{n}{anzahlKleinerAls}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{));}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{n}{positionMinimum}\PYG{p}{());}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Gemischt: \PYGZdq{}} \PYG{o}{+} \PYG{n}{Arrays}\PYG{p}{.}\PYG{n+na}{toString}\PYG{p}{(}\PYG{n}{gemischtesFeld}\PYG{p}{()));}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

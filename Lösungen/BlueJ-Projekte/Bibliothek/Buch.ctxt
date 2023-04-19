@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Buch
+comment1.params=isbnNeu
+comment1.target=Buch(int)
+comment2.params=
+comment2.target=int\ gibIsbn()
+comment3.params=
+comment3.target=boolean\ istAusgeliehen()
+comment4.params=mitgliedsnummer
+comment4.target=void\ wirdAusgeliehen(int)
+numComments=5

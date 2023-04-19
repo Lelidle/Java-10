@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{double} \PYG{n+nf}{durchschnitt}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+    \PYG{k}{return} \PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)} \PYG{n}{summe}\PYG{p}{()} \PYG{o}{/} \PYG{n}{array}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

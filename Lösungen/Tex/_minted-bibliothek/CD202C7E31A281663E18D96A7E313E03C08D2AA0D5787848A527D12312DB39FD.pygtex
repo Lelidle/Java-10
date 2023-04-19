@@ -1,0 +1,36 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Bibiothek} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+
+    \PYG{c+c1}{//Wir gehen hier davon aus, dass nur eine Bibliothek verwendet werden soll.}
+    \PYG{k+kd}{public} \PYG{n+nf}{Bibiothek}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{name} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Neumarkter Stadtbibiothek\PYGZdq{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Regal} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{nummer}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Regal}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{nummerNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{nummer} \PYG{o}{=} \PYG{n}{nummerNeu}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Buch} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{isbn}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{ausgeliehenAn}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n}{ausgeliehen}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Buch}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{isbnNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Die isbn muss zwingend bei der Eingabe eingegeben werden}
+        \PYG{n}{isbn} \PYG{o}{=} \PYG{n}{isbnNeu}\PYG{p}{;}
+        \PYG{c+c1}{//Am Anfang ist das Buch aber natürlich nicht ausgeliehen}
+        \PYG{c+c1}{//Man könnte statt \PYGZhy{}1 auch 0 nehmen, wenn man die Mitgliedsnummern}
+        \PYG{c+c1}{// bei 1 beginnen lässt.}
+        \PYG{n}{ausgeliehenAn} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+
+\end{Verbatim}

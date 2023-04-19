@@ -1,0 +1,54 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{class} \PYG{n+nc}{Wuerfel} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{public} \PYG{k+kt}{int} \PYG{n+nf}{werfe}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{k}{return} \PYG{p}{(}\PYG{k+kt}{int}\PYG{p}{)} \PYG{p}{(}\PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()} \PYG{o}{*} \PYG{l+m+mi}{6}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kt}{void} \PYG{n+nf}{main}\PYG{p}{(}\PYG{n}{String}\PYG{o}{[]} \PYG{n}{args}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{Wuerfel} \PYG{n}{wuerfel} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Wuerfel}\PYG{p}{();}
+        \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{ergebnisse100} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{l+m+mi}{6}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{ergebnisse1000} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{l+m+mi}{6}\PYG{o}{]}\PYG{p}{;}
+        \PYG{k+kt}{int}\PYG{o}{[]} \PYG{n}{ergebnisse10000} \PYG{o}{=} \PYG{k}{new} \PYG{k+kt}{int}\PYG{o}{[}\PYG{l+m+mi}{6}\PYG{o}{]}\PYG{p}{;}
+
+        \PYG{c+c1}{// Würfle 100 mal}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{100}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{wurf} \PYG{o}{=} \PYG{n}{wuerfel}\PYG{p}{.}\PYG{n+na}{werfe}\PYG{p}{();}
+            \PYG{n}{ergebnisse100}\PYG{o}{[}\PYG{n}{wurf} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{o}{]++}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{c+c1}{// Würfle 1000 mal}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{1000}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{wurf} \PYG{o}{=} \PYG{n}{wuerfel}\PYG{p}{.}\PYG{n+na}{werfe}\PYG{p}{();}
+            \PYG{n}{ergebnisse1000}\PYG{o}{[}\PYG{n}{wurf} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{o}{]++}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{c+c1}{// Würfle 10000 mal}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{10000}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{int} \PYG{n}{wurf} \PYG{o}{=} \PYG{n}{wuerfel}\PYG{p}{.}\PYG{n+na}{werfe}\PYG{p}{();}
+            \PYG{n}{ergebnisse10000}\PYG{o}{[}\PYG{n}{wurf} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{o}{]++}\PYG{p}{;}
+        \PYG{p}{\PYGZcb{}}
+
+        \PYG{c+c1}{// Berechne die relative Häufigkeit und Abweichung}
+        \PYG{k}{for} \PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{6}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{k+kt}{double} \PYG{n}{relativeHäufigkeit100} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)} \PYG{n}{ergebnisse100}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{/} \PYG{l+m+mi}{100}\PYG{p}{;}
+            \PYG{k+kt}{double} \PYG{n}{relativeHäufigkeit1000} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)} \PYG{n}{ergebnisse1000}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{/} \PYG{l+m+mi}{1000}\PYG{p}{;}
+            \PYG{k+kt}{double} \PYG{n}{relativeHäufigkeit10000} \PYG{o}{=} \PYG{p}{(}\PYG{k+kt}{double}\PYG{p}{)} \PYG{n}{ergebnisse10000}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{/} \PYG{l+m+mi}{10000}\PYG{p}{;}
+
+            \PYG{k+kt}{double} \PYG{n}{idealRelativeHäufigkeit} \PYG{o}{=} \PYG{l+m+mf}{1.0} \PYG{o}{/} \PYG{l+m+mi}{6}\PYG{p}{;}
+            \PYG{k+kt}{double} \PYG{n}{abweichung100} \PYG{o}{=} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{abs}\PYG{p}{(}\PYG{n}{relativeHäufigkeit100} \PYG{o}{\PYGZhy{}} \PYG{n}{idealRelativeHäufigkeit}\PYG{p}{);}
+            \PYG{k+kt}{double} \PYG{n}{abweichung1000} \PYG{o}{=} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{abs}\PYG{p}{(}\PYG{n}{relativeHäufigkeit1000} \PYG{o}{\PYGZhy{}} \PYG{n}{idealRelativeHäufigkeit}\PYG{p}{);}
+            \PYG{k+kt}{double} \PYG{n}{abweichung10000} \PYG{o}{=} \PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{abs}\PYG{p}{(}\PYG{n}{relativeHäufigkeit10000} \PYG{o}{\PYGZhy{}} \PYG{n}{idealRelativeHäufigkeit}\PYG{p}{);}
+
+            \PYG{c+c1}{// Gib Ergebnisse auf der Konsole aus}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Ergebnis \PYGZdq{}} \PYG{o}{+} \PYG{p}{(}\PYG{n}{i} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{o}{+} \PYG{l+s}{\PYGZdq{}:\PYGZdq{}}\PYG{p}{);}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Relative Häufigkeit (100 Würfe): \PYGZdq{}} \PYG{o}{+} \PYG{n}{relativeHäufigkeit100}\PYG{p}{);}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Abweichung (100 Würfe): \PYGZdq{}} \PYG{o}{+} \PYG{n}{abweichung100}\PYG{p}{);}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Relative Häufigkeit (1000 Würfe): \PYGZdq{}} \PYG{o}{+} \PYG{n}{relativeHäufigkeit1000}\PYG{p}{);}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Abweichung (1000 Würfe): \PYGZdq{}} \PYG{o}{+} \PYG{n}{abweichung1000}\PYG{p}{);}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Relative Häufigkeit (10000 Würfe): \PYGZdq{}} \PYG{o}{+} \PYG{n}{relativeHäufigkeit10000}\PYG{p}{);}
+            \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Abweichung (10000 Würfe): \PYGZdq{}} \PYG{o}{+} \PYG{n}{abweichung10000}\PYG{p}{);}
+            \PYG{p}{\PYGZcb{}}
+        \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\end{Verbatim}

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Holzstapel
+comment1.params=
+comment1.target=Holzstapel()
+comment2.params=anzahl
+comment2.target=void\ st\u00E4mmeAbliefern(int)
+numComments=3

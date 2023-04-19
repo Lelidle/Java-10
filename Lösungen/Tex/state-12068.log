@@ -1,0 +1,12 @@
+[ERROR Apr 19 11:09:29.525384300, defaults.go:149] Could not load configuration: Failed to load configuration.
+
+Stacktrace: D:/a/cli/cli/internal/logging/logging.go:github.com/ActiveState/cli/internal/logging.Error:258
+D:/a/cli/cli/internal/logging/defaults.go:github.com/ActiveState/cli/internal/logging.init.0:149
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.doInit:5652
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.doInit:5647
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.doInit:5647
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/proc.go:runtime.main:191
+C:/hostedtoolcache/windows/go/1.15.11/x64/src/runtime/asm_amd64.s:runtime.goexit:1374
+
+[DEBUG Apr 19 11:09:29.594132900, defaults.go:178] Args: [C:\Users\larsw\AppData\Roaming\ActiveState\bin\state.exe exec --path C:\Users\larsw\ActiveState\Perl-5.32 -- perl.exe -IC:/Users/larsw/AppData/Local/Programs/MiKTeX/scripts/latexmk/ C:/Users/larsw/AppData/Local/Programs/MiKTeX/scripts/latexmk/latexmk.pl --max-print-line=10000 -synctex=1 -interaction=nonstopmode -file-line-error -pdf -outdir=d:/OneDrive - FWU EU CLOUD/3. Info/Info 10/Inf 10.2 OOP/solutions -shell-escape d:/OneDrive - FWU EU CLOUD/3. Info/Info 10/Inf 10.2 OOP/solutions/bibliothek]
+[DEBUG Apr 19 11:09:29.594663900, locale.go:34] Init

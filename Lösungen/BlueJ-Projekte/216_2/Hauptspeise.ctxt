@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Hauptspeise
+comment1.params=name\ preis
+comment1.target=Hauptspeise(java.lang.String,\ double)
+numComments=2

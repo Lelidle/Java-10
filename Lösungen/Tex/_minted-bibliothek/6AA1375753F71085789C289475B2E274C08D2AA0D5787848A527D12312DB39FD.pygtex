@@ -1,0 +1,50 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Bibliothek} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+
+    \PYG{c+c1}{//Wir gehen hier davon aus, dass nur eine Bibliothek verwendet werden soll.}
+    \PYG{k+kd}{public} \PYG{n+nf}{Bibliothek}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{name} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Neumarkter Stadtbibliothek\PYGZdq{}}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Regal} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{nummer}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Regal}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{nummerNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{nummer} \PYG{o}{=} \PYG{n}{nummerNeu}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Buch} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{isbn}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{ausgeliehenAn}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{k+kt}{boolean} \PYG{n}{ausgeliehen}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Buch}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{isbnNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Die isbn muss zwingend bei der Eingabe eingegeben werden}
+        \PYG{n}{isbn} \PYG{o}{=} \PYG{n}{isbnNeu}\PYG{p}{;}
+        \PYG{c+c1}{//Am Anfang ist das Buch aber natürlich nicht ausgeliehen}
+        \PYG{c+c1}{//Man könnte statt \PYGZhy{}1 auch 0 nehmen, wenn man die Mitgliedsnummern}
+        \PYG{c+c1}{//bei 1 beginnen lässt.}
+        \PYG{n}{ausgeliehenAn} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{;}
+        \PYG{n}{ausgeliehen} \PYG{o}{=} \PYG{k+kc}{false}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Besucher} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{mitgliedsnummer}\PYG{p}{;}
+    \PYG{c+c1}{//Wir deklarieren ein Array vom Typ Buch}
+    \PYG{k+kd}{private} \PYG{n}{Buch}\PYG{o}{[]} \PYG{n}{ausgelieheneBücher}\PYG{p}{;}
+    \PYG{k+kd}{private} \PYG{n}{String} \PYG{n}{name}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Besucher}\PYG{p}{(}\PYG{n}{String} \PYG{n}{nameNeu}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{mitgliedsnummerNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{name} \PYG{o}{=} \PYG{n}{nameNeu}\PYG{p}{;}
+        \PYG{n}{mitgliedsnummer} \PYG{o}{=} \PYG{n}{mitgliedsnummerNeu}\PYG{p}{;}
+        \PYG{c+c1}{//Wir initialisieren das Array, d.h. wir teilen Java mit,}
+        \PYG{c+c1}{//dass wir ein Array der Länge 6 haben möchten, dass mit Referenzen}
+        \PYG{c+c1}{//zu Büchern gefüllt werden kann. Das Array ist aber noch \PYGZdq{}leer\PYGZdq{}!}
+        \PYG{n}{ausgelieheneBücher} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Buch}\PYG{o}{[}\PYG{l+m+mi}{6}\PYG{o}{]}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

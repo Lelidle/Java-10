@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Pseudocode
+comment1.params=a\ b
+comment1.target=void\ methodeA(int,\ int)
+comment2.params=n
+comment2.target=void\ methodeB(int)
+comment3.params=alter
+comment3.target=void\ methodeC(int)
+comment4.params=x
+comment4.target=void\ methodeD(double)
+numComments=5

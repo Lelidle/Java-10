@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Menü} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{n}{Nahrung}\PYG{o}{[]} \PYG{n}{menü}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Menü}\PYG{p}{()} \PYG{p}{\PYGZob{}}
+        \PYG{n}{menü} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{o}{[}\PYG{l+m+mi}{3}\PYG{o}{]}\PYG{p}{;}
+        \PYG{n}{menü}\PYG{o}{[}\PYG{l+m+mi}{0}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{p}{(...)} \PYG{c+c1}{// Vorspeise}
+        \PYG{n}{menü}\PYG{o}{[}\PYG{l+m+mi}{1}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{p}{(...)} \PYG{c+c1}{// Hauptspeise}
+        \PYG{n}{menü}\PYG{o}{[}\PYG{l+m+mi}{2}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Nahrung}\PYG{p}{(...)} \PYG{c+c1}{// Nachspeise}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

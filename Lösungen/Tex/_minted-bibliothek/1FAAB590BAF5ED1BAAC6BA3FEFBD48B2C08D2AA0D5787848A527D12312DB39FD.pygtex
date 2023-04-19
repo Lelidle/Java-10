@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{class} \PYG{n+nc}{Regal} \PYG{p}{\PYGZob{}}
+    \PYG{k+kd}{private} \PYG{k+kt}{int} \PYG{n}{nummer}\PYG{p}{;}
+    \PYG{c+c1}{//Das Array wird für Einträge des Datentyps Buch deklariert}
+    \PYG{k+kd}{private} \PYG{n}{Buch}\PYG{o}{[]} \PYG{n}{bücher}\PYG{p}{;}
+
+    \PYG{k+kd}{public} \PYG{n+nf}{Regal}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{nummerNeu}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{nummer} \PYG{o}{=} \PYG{n}{nummerNeu}\PYG{p}{;}
+        \PYG{c+c1}{//Das Array wird initialisiert mit Länge 32}
+        \PYG{n}{bücher} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Buch}\PYG{o}{[}\PYG{l+m+mi}{32}\PYG{o}{]}\PYG{p}{;}
+        \PYG{c+c1}{//Wir erzeugen die Bücher, damit die ISBN\PYGZhy{}Nummern der Bücher}
+        \PYG{c+c1}{//unterschiedlich sind kann z.B. die nummer des Regals als}
+        \PYG{c+c1}{//Hunderterziffer verwendet werden (das ist natürlich willkürlich}
+        \PYG{c+c1}{//und könnte auch anders gelöst werden!)}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{l+m+mi}{32}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//nummerNeu*100 gibt uns den \PYGZdq{}Hunderterbereich\PYGZdq{} in dem die ISBN}
+            \PYG{c+c1}{//liegt, dann addieren wir i, damit alle unterschiedlich sind}
+            \PYG{n}{bücher}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]} \PYG{o}{=} \PYG{k}{new} \PYG{n}{Buch}\PYG{p}{(}\PYG{n}{nummerNeu}\PYG{o}{*}\PYG{l+m+mi}{100}\PYG{o}{+}\PYG{n}{i}\PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

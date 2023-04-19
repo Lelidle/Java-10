@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Men\u00FC
+comment1.params=name\ vorspeise\ hauptspeise\ nachspeise
+comment1.target=Men\u00FC(java.lang.String,\ Vorspeise,\ Hauptspeise,\ Nachspeise)
+comment2.params=
+comment2.target=void\ vorspeiseEssen()
+comment3.params=
+comment3.target=void\ hauptspeiseEssen()
+comment4.params=
+comment4.target=void\ nachspeiseEssen()
+numComments=5

@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{//d)}
+\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{radiusSetzen}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{nummer}\PYG{p}{,} \PYG{k+kt}{double} \PYG{n}{radius}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{radius} \PYG{o}{\PYGZlt{}=} \PYG{l+m+mi}{0}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Der Radius ist zu klein!\PYGZdq{}}\PYG{p}{);}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{c+c1}{//Wir speichern den alten Radius der Kugel in einer Variable (also einer Art)}
+    \PYG{c+c1}{//\PYGZdq{}Zwischenspeicher\PYGZdq{} ab, dazu verwenden wir die radiusGeben()\PYGZhy{}Methode des Kreises}
+    \PYG{k+kt}{double} \PYG{n}{alterRadius} \PYG{o}{=} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{nummer}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{();}
+    \PYG{c+c1}{//Dann verschieben wir zuerst die vergrößerte (verkleinerte) Perle:}
+    \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{nummer}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{verschieben}\PYG{p}{(}\PYG{n}{radius}\PYG{o}{\PYGZhy{}}\PYG{n}{alterRadius}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{);}
+    \PYG{c+c1}{//Wir verwenden hier die Differenz, da der Kreis nicht seinen neuen Radius weiterwandert,}
+    \PYG{c+c1}{//sondern nur den Wert, um den er größer bzw. kleiner geworden ist.}
+    \PYG{c+c1}{//Danach müssen noch alle anderen Perlen angepasst werden, außer wir haben die}
+    \PYG{c+c1}{//letzte Perle vergrößert (Spezialfall!):}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{nummer} \PYG{o}{==} \PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//In diesem Fall sind wir fertig und können abbrechen}
+        \PYG{k}{return}\PYG{p}{;}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{c+c1}{//Andernfalls verschieben wir ab der Perle \PYGZdq{}nummer + 1\PYGZdq{}, wollen wir also z.B.}
+    \PYG{c+c1}{//die fünfte Perle von 10 verschieben, müssen die Perlen 6 bis 10 verschoben werden.}
+    \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{n}{nummer} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}} \PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;} \PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Es muss wieder um die Differenz verschoben werden, aber diesmal zweimal}
+        \PYG{c+c1}{//(da der Kreis ja auf beiden Seiten um die Differenz geschrumpft bzw}
+        \PYG{c+c1}{//gewachsen ist!)}
+        \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{verschieben}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{o}{*}\PYG{p}{(}\PYG{n}{radius}\PYG{o}{\PYGZhy{}}\PYG{n}{alterRadius}\PYG{p}{),}\PYG{l+m+mi}{0}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

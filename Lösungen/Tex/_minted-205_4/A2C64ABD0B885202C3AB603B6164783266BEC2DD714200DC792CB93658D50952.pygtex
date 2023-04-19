@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k+kd}{public}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{würfeln}\PYG{p}{()}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{        }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{zufallszahl}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Math}\PYG{p}{.}\PYG{n+na}{random}\PYG{p}{()}\PYG{o}{*}\PYG{l+m+mi}{6}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{zufallszahl}\PYG{p}{;}
+\PYG{+w}{    }\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

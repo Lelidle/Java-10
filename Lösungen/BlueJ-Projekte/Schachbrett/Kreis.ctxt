@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Kreis
+comment1.params=radiusNeu
+comment1.target=Kreis(double)
+comment10.params=
+comment10.target=void\ zeichnen()
+comment11.params=
+comment11.target=void\ auswischen()
+comment2.params=
+comment2.target=double\ mitteXGeben()
+comment3.params=
+comment3.target=double\ mitteYGeben()
+comment4.params=
+comment4.target=double\ radiusGeben()
+comment5.params=
+comment5.target=java.lang.String\ farbeGeben()
+comment6.params=radiusNeu
+comment6.target=void\ radiusSetzen(double)
+comment7.params=mitteXNeu\ mitteYNeu
+comment7.target=void\ mittelpunktSetzen(double,\ double)
+comment8.params=farbeNeu
+comment8.target=void\ farbeSetzen(java.lang.String)
+comment9.params=deltaX\ deltaY
+comment9.target=void\ verschieben(double,\ double)
+numComments=12

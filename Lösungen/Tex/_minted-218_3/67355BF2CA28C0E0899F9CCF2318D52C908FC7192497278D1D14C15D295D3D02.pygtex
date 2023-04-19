@@ -1,0 +1,49 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kt}{void} \PYG{n+nf}{anordnungSetzen}\PYG{p}{(}\PYG{k+kt}{char} \PYG{n}{art}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{//Fr die horizontale Anordnung...}
+    \PYG{k}{if}\PYG{p}{(}\PYG{n}{art} \PYG{o}{==} \PYG{l+s+sc}{\PYGZsq{}h\PYGZsq{}}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//wird aber der zweiten perle verschoben}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}}\PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//und zwar genauso wie in der vorangegabenen Methode!}
+            \PYG{c+c1}{//Der einzige Unterschied: die y\PYGZhy{}Position der vorangehenden Perle}
+            \PYG{c+c1}{//ist kein Eingabeparameter mehr, sondern muss geholt werden}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mittelpunktSetzen}\PYG{p}{(}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteXGeben}\PYG{p}{()}
+                \PYG{o}{+} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{()}
+                \PYG{o}{+} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{(),}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteYGeben}\PYG{p}{()}
+            \PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{k}{if}\PYG{p}{(}\PYG{n}{art} \PYG{o}{==} \PYG{l+s+sc}{\PYGZsq{}v\PYGZsq{}}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Für die vertikale Anordnung wird in y\PYGZhy{}Richtung, statt in x\PYGZhy{}Richtung verschoben}
+        \PYG{c+c1}{//ansonsten ist alles analog}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}}\PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mittelpunktSetzen}\PYG{p}{(}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteXGeben}\PYG{p}{(),}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteYGeben}\PYG{p}{()}
+                \PYG{o}{+} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{()}
+                \PYG{o}{+} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{()}
+            \PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{k}{if}\PYG{p}{(}\PYG{n}{art} \PYG{o}{==} \PYG{l+s+sc}{\PYGZsq{}d\PYGZsq{}}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Für die Diagonale muss natürlich in beide Richtungen verschoben werden}
+        \PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int} \PYG{n}{i} \PYG{o}{=} \PYG{l+m+mi}{1}\PYG{p}{;} \PYG{n}{i} \PYG{o}{\PYGZlt{}}\PYG{n}{perlen}\PYG{p}{.}\PYG{n+na}{length}\PYG{p}{;}\PYG{n}{i}\PYG{o}{++}\PYG{p}{)} \PYG{p}{\PYGZob{}}
+            \PYG{c+c1}{//Die eigentliche Verschiebung ist eigentlich ein mathematisches Problem}
+            \PYG{c+c1}{//In diesem Fall brauchen wir natürlich wieder beide Radien, für eine}
+            \PYG{c+c1}{//bessere Übersichtlichkeit speichern wir sie zwischen:}
+            \PYG{k+kt}{double} \PYG{n}{radiusAlt} \PYG{o}{=} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{();}
+            \PYG{k+kt}{double} \PYG{n}{radiusNeu} \PYG{o}{=} \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{radiusGeben}\PYG{p}{();}
+            \PYG{c+c1}{//Überlegt man sich die Verschiebung geometrisch, so stellt man fest,}
+            \PYG{c+c1}{//dass eine Verschiebung um \PYGZdq{}Wurzel 2 geteilt durch 2\PYGZdq{} nötig wäre.}
+            \PYG{c+c1}{//Für unsere Zwecke ist aber eine Näherung von 0,7 völlig ausreichend}
+            \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mittelpunktSetzen}\PYG{p}{(}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteXGeben}\PYG{p}{()} \PYG{o}{+} \PYG{l+m+mf}{0.7}\PYG{o}{*}\PYG{p}{(}\PYG{n}{radiusAlt} \PYG{o}{+} \PYG{n}{radiusNeu}\PYG{p}{),}
+                \PYG{n}{perlen}\PYG{o}{[}\PYG{n}{i}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{o}{]}\PYG{p}{.}\PYG{n+na}{mitteYGeben}\PYG{p}{()} \PYG{o}{+} \PYG{l+m+mf}{0.7}\PYG{o}{*}\PYG{p}{(}\PYG{n}{radiusAlt} \PYG{o}{+} \PYG{n}{radiusNeu}\PYG{p}{)}
+            \PYG{p}{);}
+        \PYG{p}{\PYGZcb{}}
+    \PYG{p}{\PYGZcb{}} \PYG{k}{else} \PYG{p}{\PYGZob{}}
+        \PYG{c+c1}{//Falls keine der Anordnungen passt wird einfach nichts gemacht!}
+        \PYG{n}{System}\PYG{p}{.}\PYG{n+na}{out}\PYG{p}{.}\PYG{n+na}{println}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Die Anordnung ist nicht möglich\PYGZdq{}}\PYG{p}{);}
+    \PYG{p}{\PYGZcb{}}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
